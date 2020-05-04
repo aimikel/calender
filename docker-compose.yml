@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  mysql:
+    container_name: mysql
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    expose:
+      - 3306
+    ports:
+      - 5510:3306
+    volumes:
+      - mysql-data:/var/lib/mysql:delegated
