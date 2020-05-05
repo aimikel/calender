@@ -12,9 +12,10 @@ services:
     ports:
       - 5510:3306
     volumes:
-      - mysql-data:/var/lib/mysql:delegated
+      - ./mysql-data:/var/lib/mysql:delegated
     environment:
       - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=calender123
 
 volumes:
   mysql-data:
