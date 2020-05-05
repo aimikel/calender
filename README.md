@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-git clone https://github.com/aimikel/calender
+git clone git@github.com:aimikel/calender.git
 docker-compose up
 gradle wrapper
 ./gradlew
