@@ -15,7 +15,7 @@ services:
       - ./mysql-data:/var/lib/mysql:delegated
     environment:
       - MYSQL_ROOT_PASSWORD=1234
-      - MYSQL_DATABASE=calender123
+      - MYSQL_DATABASE=calender
 
 volumes:
   mysql-data:
